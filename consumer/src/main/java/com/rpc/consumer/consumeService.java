@@ -1,6 +1,6 @@
 package com.rpc.consumer;
 
-import com.rpc.factory.registry.LocalRegistry;
+import com.rpc.core.registry.LocalRegistry;
 
 /**
  * @ClassName %{NAME}

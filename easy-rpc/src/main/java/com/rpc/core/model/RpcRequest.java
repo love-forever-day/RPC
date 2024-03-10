@@ -1,4 +1,4 @@
-package com.rpc.factory.model;
+package com.rpc.core.model;
 
 import lombok.Builder;
 import lombok.Data;

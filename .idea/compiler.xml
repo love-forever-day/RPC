@@ -11,6 +11,7 @@
         <module name="common" />
         <module name="easy-rpc" />
         <module name="consumer" />
+        <module name="rpc-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

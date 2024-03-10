@@ -3,11 +3,10 @@ package com.rpc.consumer.proxy;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import com.rpc.common.model.User;
-import com.rpc.common.service.UserService;
-import com.rpc.factory.model.RpcRequest;
-import com.rpc.factory.model.RpcResponse;
-import com.rpc.factory.serializer.JdkSerializer;
-import com.rpc.factory.serializer.Serializer;
+import com.rpc.core.model.RpcRequest;
+import com.rpc.core.model.RpcResponse;
+import com.rpc.core.serializer.JdkSerializer;
+import com.rpc.core.serializer.Serializer;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;

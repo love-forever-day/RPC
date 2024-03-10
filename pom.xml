@@ -12,6 +12,7 @@
         <module>common</module>
         <module>proverder</module>
         <module>easy-rpc</module>
+        <module>rpc-core</module>
     </modules>
 
     <properties>
