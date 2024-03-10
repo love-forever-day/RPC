@@ -1,0 +1,4 @@
+rpc:
+  name: wdq
+  version: 3.0
+  serverPort: 8081
