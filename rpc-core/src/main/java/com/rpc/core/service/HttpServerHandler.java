@@ -1,10 +1,12 @@
 package com.rpc.core.service;
 
+import com.rpc.core.RpcApplication;
 import com.rpc.core.model.RpcRequest;
 import com.rpc.core.model.RpcResponse;
 import com.rpc.core.registry.LocalRegistry;
 import com.rpc.core.serializer.JdkSerializer;
 import com.rpc.core.serializer.Serializer;
+import com.rpc.core.serializer.SerializerFactory;
 import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;
@@ -25,8 +27,9 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
 
     @Override
     public void handle(HttpServerRequest request) {
-        final Serializer serializer=new JdkSerializer();
+        final Serializer serializer= SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
         System.out.println("Receiver Method:"+request.method());
+        System.out.println("这次的反序列化器是"+serializer.getClass().getName());
         request.bodyHandler(body->{
             byte[] bytes=body.getBytes();
             RpcRequest rpcRequest=null;

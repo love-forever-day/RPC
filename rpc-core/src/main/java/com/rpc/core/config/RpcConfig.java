@@ -1,5 +1,6 @@
 package com.rpc.core.config;
 
+import com.rpc.core.serializer.SerializerKeys;
 import lombok.Data;
 
 /**
@@ -31,5 +32,8 @@ public class RpcConfig {
     **是否开启mock进行模拟调用
     */
     private boolean mock=false;
-
+    /**
+     * 序列化器
+     */
+    private String serializer = SerializerKeys.JDK;
 }

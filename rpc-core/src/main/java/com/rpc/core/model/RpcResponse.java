@@ -1,6 +1,8 @@
 package com.rpc.core.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
@@ -10,6 +12,8 @@ import java.io.Serializable;
  * @synposis TODO
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class RpcResponse implements Serializable {
   //响应数据
   private  Object data;

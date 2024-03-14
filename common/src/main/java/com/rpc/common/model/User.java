@@ -1,5 +1,9 @@
 package com.rpc.common.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 
 /**
@@ -7,16 +11,9 @@ import java.io.Serializable;
  * @Description TODO
  * @synposis TODO
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User implements Serializable {
     String name;
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-
-
 }
